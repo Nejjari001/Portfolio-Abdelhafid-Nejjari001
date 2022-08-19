@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #344563;
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.nav-item-tog span {
+  color: #7f8cff;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+li .logo {
+  font-family: Poppins, sans-serif;
+  color: #7f8cff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 16px;
+  text-shadow: 2pc;
+}
+
+.main-container {
+  display: flex;
+  background-image: url("/img/header-shapes-mobile.png");
+  background-size: cover;
+  margin: 0;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+div.head-2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 104px 24px 52px;
+  height: 120px;
+}
+
+.hello-title {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.description-container p {
+  color: #344563;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.container-link a {
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-left: 24px;
+  margin-top: 12px;
+}
+
+.description-container {
+  height: 161px;
+  margin-bottom: 0;
+}
+
+.container-list-icons ul {
+  text-decoration: none;
+  margin-left: -112px;
+  margin-top: 1.4rem;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.icon-twitter {
+  text-decoration: none;
+  padding: 1rem;
+  cursor: pointer;
+  display: block;
+  background: transparent url("/img/social/Vector.svg") no-repeat;
+}
+
+.icon-linkden {
+  text-decoration: none;
+  padding: 1rem;
+  cursor: pointer;
+  display: block;
+  background: transparent url("/img/social/Linkedin.svg") no-repeat;
+}
+
+.icon-github {
+  text-decoration: none;
+  padding: 1rem;
+  cursor: pointer;
+  display: block;
+  background: transparent url("/img/social/Vector1.svg") no-repeat;
+}
