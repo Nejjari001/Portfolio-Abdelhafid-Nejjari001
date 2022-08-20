@@ -354,7 +354,7 @@ p {
 
 .icon-section span {
   margin-left: 4rem;
-  font-family: Poppins;
+  font-family: ""Poppins"";
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -362,27 +362,38 @@ p {
   color: #253858;
 }
 
-.fram {
-  font-family: Poppins;
-  height: 511px;
-  width: auto;
+li.fram {
+  font-family: ""Poppins"";
+  height: 210px;
+  width: 36px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 100;
   font-size: 20px;
   line-height: 24px;
   margin-top: 1rem;
-  margin-left: 0.7rem;
+  margin-left: 2rem;
   color: #000;
 }
 
-.skills {
+.fram p {
+  width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+li.skills {
   font-family: Poppins;
   font-style: normal;
   height: 511px;
-  width: auto;
+  width: 112px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 0.7rem;
-  color: #000;
+  margin-left: 2rem;
+}
+
+.skills p {
+  width: 0;
+  margin: 0;
+  padding: 0;
 }
