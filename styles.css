@@ -362,6 +362,26 @@ p {
 
 li.fram {
   font-family: Poppins, sans-serif;
+  height: 38px;
+  width: 36px;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  margin-left: 2rem;
+  color: #000;
+}
+
+/* .fram p {
+  width: 0;
+  margin: 0;
+  padding: 0;
+} */
+
+li.skills {
+  font-family: Poppins, sans-serif;
   height: 210px;
   width: 36px;
   font-style: normal;
@@ -373,25 +393,8 @@ li.fram {
   color: #000;
 }
 
-.fram p {
+/* .skills p {
   width: 0;
   margin: 0;
   padding: 0;
-}
-
-li.skills {
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  height: 511px;
-  width: 112px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  margin-left: 2rem;
-}
-
-.skills p {
-  width: 0;
-  margin: 0;
-  padding: 0;
-}
+} */
