@@ -6,22 +6,55 @@
   list-style: none;
 }
 
+.btn-see-project {
+  color: #396df2;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: capitalize;
+  border: 1px solid #6070ff;
+  padding: 0.5em;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+/* -----------------nav bar-------- */
 .nav-list {
   display: flex;
-  justify-content: space-between;
+  list-style: none;
   align-items: center;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  justify-content: space-between;
+  margin-right: 0;
+  width: 286px;
+  height: 72px;
 }
 
-.nav-item-tog span {
-  color: #7f8cff;
-  font-size: xx-large;
-  cursor: pointer;
+.nav a {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
 }
 
-li .logo {
+.nav-list div {
+  margin: 12px 0 12px 24px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  height: 24px;
+  transition-property: margin;
+  transition-duration: 500ms;
+}
+
+.logo {
   font-family: Poppins, sans-serif;
   color: #7f8cff;
   font-size: 22px;
@@ -30,106 +63,77 @@ li .logo {
   text-shadow: 2pc;
 }
 
+/* -----------------nav bar-------- */
+
+/* -------Presentation Section----- */
+
+section.main-container {
+  margin-bottom: 2rem;
+  display: grid;
+}
+
 .main-container {
-  display: flex;
+  width: 100%;
+  height: auto;
   background-image: url("/img/header-shapes-mobile.png");
   background-size: cover;
-  margin: 0;
-  align-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 12rem;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  padding-bottom: 10px;
 }
 
-div.head-2-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 104px 24px 52px;
-  height: 120px;
+.head-2-container {
+  margin: 30px 20px;
+  width: 100%;
 }
 
-.hello-title {
-  font-family: Poppins, sans-serif;
-  font-style: normal;
+h1 .title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  padding: 5rem 0 10px;
 }
 
-p {
+p.description {
   position: relative;
   font-size: 15px;
   color: #344563;
   width: 295px;
   height: 76px;
-  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-left: 0;
 }
 
-.description-container p {
-  color: #344563;
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+.social-icons {
   margin-top: 12px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
-.container-link a {
-  text-decoration: none;
-  font-family: Poppins, sans-serif;
-  font-style: normal;
+.social-icons > h3 {
+  text-transform: uppercase;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
   color: #7f8cff;
-  margin-left: 24px;
-  margin-top: 12px;
+  padding-bottom: 15px;
 }
 
-.description-container {
-  height: 161px;
-  margin-bottom: 0;
-}
-
-.container-list-icons ul {
-  text-decoration: none;
-  margin-left: -112px;
-  margin-top: 1.4rem;
-  padding: 8px;
+.social-icons > ul {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
 }
 
-.icon-twitter {
-  text-decoration: none;
-  padding: 1rem;
-  cursor: pointer;
-  display: block;
-  background: transparent url("/img/social/Vector.svg") no-repeat;
+.social-icons.ul {
+  list-style: none;
+  height: 40px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 2px;
 }
 
-.icon-linkden {
-  text-decoration: none;
-  padding: 1rem;
-  cursor: pointer;
-  display: block;
-  background: transparent url("/img/social/Linkedin.svg") no-repeat;
+.social-icons > img {
+  width: 20px;
+  height: 20px;
 }
 
-.icon-github {
-  text-decoration: none;
-  padding: 1rem;
-  cursor: pointer;
-  display: block;
-  background: transparent url("/img/social/Vector1.svg") no-repeat;
-}
-
-/* Styles List Projects Section */
+/* Styles Section 1 */
 
 .grid-container {
   height: 552px;
@@ -146,12 +150,14 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 295px;
+  height: 220px;
   margin-left: 1rem;
   margin-top: 1rem;
   margin-right: 1rem;
 }
 
-.container-image-bg h2 {
+.container-image-bg h1 {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-size: 32px;
@@ -160,7 +166,7 @@ p {
   text-align: start;
   font-weight: 700;
   flex: none;
-  margin-left: 1.2rem;
+  margin-left: 10px;
   margin-top: 1rem;
 }
 
@@ -176,7 +182,9 @@ p {
   display: flex;
   text-decoration: none;
   gap: 1rem;
-  margin: 1rem;
+  margin-left: 2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .type-job ul li {
@@ -186,6 +194,12 @@ p {
   font-size: 13px;
   line-height: 16px;
   margin-left: 1rem;
+}
+
+p.profess {
+  width: 295px;
+  height: 76px;
+  margin-left: 16px;
 }
 
 .languages-container ul {
@@ -205,7 +219,7 @@ p {
   margin-left: 1rem;
 }
 
-.html {
+.html-section1 {
   border: 1px solid transparent;
   width: 53px;
   height: 24px;
@@ -214,7 +228,7 @@ p {
   border-radius: 20px;
 }
 
-.css {
+.css-section1 {
   border: 1px solid transparent;
   width: 45px;
   height: 24px;
@@ -223,7 +237,7 @@ p {
   padding: 0.5em;
 }
 
-.js {
+.js-section1 {
   width: 89px;
   border: 1px solid transparent;
   height: 24px;
@@ -232,20 +246,345 @@ p {
   padding: 0.5em;
 }
 
-.btn-see-project {
-  color: #396df2;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-  font-weight: 500;
-  font-size: 17px;
-  text-transform: capitalize;
-  border: 1px solid #6070ff;
-  padding: 0.5em;
-  border-radius: 10px;
-  position: relative;
-  margin-left: 1.5rem;
+/* Styles Section 2 */
+.grid-container-2 {
+  height: 552px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 22px;
+  background: #fff;
+  margin-bottom: 12rem;
 }
 
+.container-image-bg-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 295px;
+  height: 220px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.container-image-bg-2 h1 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: start;
+  font-weight: 700;
+  flex: none;
+  margin-left: 10px;
+  margin-top: 1rem;
+}
+
+.content-side-2 {
+  font-family: Poppins, sans-serif;
+  width: 491px;
+  height: 215;
+  margin: 0;
+  padding: 0;
+}
+
+.type-job-2 ul {
+  display: flex;
+  text-decoration: none;
+  gap: 1rem;
+  margin-left: 2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.type-job-2 ul li {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  margin-left: 1rem;
+}
+
+p.profess-2 {
+  width: 295px;
+  height: 76px;
+  margin-left: 16px;
+}
+
+.languages-container-2 ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0 10px;
+  margin: 15px 0;
+}
+
+.languages-container-2 ul li {
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  list-style-type: none;
+  padding: 0 10px;
+  margin-left: 1rem;
+}
+
+.html-section2 {
+  border: 1px solid transparent;
+  width: 53px;
+  height: 24px;
+  padding: 0.5em;
+  background: #ebebff;
+  border-radius: 20px;
+}
+
+.css-section2 {
+  border: 1px solid transparent;
+  width: 45px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 20px;
+  padding: 0.5em;
+}
+
+.js-section2 {
+  width: 89px;
+  border: 1px solid transparent;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 20px;
+  padding: 0.5em;
+}
+
+/* Styles Section 3 */
+
+.grid-container-3 {
+  height: 552px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 22px;
+  background: #fff;
+  margin-bottom: 12rem;
+}
+
+.container-image-bg-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 295px;
+  height: 220px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.container-image-bg-3 h1 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: start;
+  font-weight: 700;
+  flex: none;
+  margin-left: 10px;
+  margin-top: 1rem;
+}
+
+.content-side-3 {
+  font-family: Poppins, sans-serif;
+  width: 491px;
+  height: 215;
+  margin: 0;
+  padding: 0;
+}
+
+.type-job-3 ul {
+  display: flex;
+  text-decoration: none;
+  gap: 1rem;
+  margin-left: 2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.type-job-3 ul li {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  margin-left: 1rem;
+}
+
+p.profess-3 {
+  width: 295px;
+  height: 76px;
+  margin-left: 16px;
+}
+
+.languages-container-3 ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0 10px;
+  margin: 15px 0;
+}
+
+.languages-container-3 ul li {
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  list-style-type: none;
+  padding: 0 10px;
+  margin-left: 1rem;
+}
+
+.html-section3 {
+  border: 1px solid transparent;
+  width: 53px;
+  height: 24px;
+  padding: 0.5em;
+  background: #ebebff;
+  border-radius: 20px;
+}
+
+.css-section3 {
+  border: 1px solid transparent;
+  width: 45px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 20px;
+  padding: 0.5em;
+}
+
+.js-section3 {
+  width: 89px;
+  border: 1px solid transparent;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 20px;
+  padding: 0.5em;
+}
+
+/* Styles Section 4 */
+
+.grid-container-4 {
+  height: 552px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 22px;
+  background: #fff;
+  margin-bottom: 12rem;
+}
+
+.container-image-bg-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 295px;
+  height: 220px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.container-image-bg-4 h1 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: start;
+  font-weight: 700;
+  flex: none;
+  margin-left: 10px;
+  margin-top: 1rem;
+}
+
+.content-side-4 {
+  font-family: Poppins, sans-serif;
+  width: 491px;
+  height: 215;
+  margin: 0;
+  padding: 0;
+}
+
+.type-job-4 ul {
+  display: flex;
+  text-decoration: none;
+  gap: 1rem;
+  margin-left: 2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.type-job-4 ul li {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  margin-left: 1rem;
+}
+
+p.profess-4 {
+  width: 295px;
+  height: 76px;
+  margin-left: 16px;
+}
+
+.languages-container-4 ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0 10px;
+  margin: 15px 0;
+}
+
+.languages-container-4 ul li {
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  list-style-type: none;
+  padding: 0 10px;
+  margin-left: 1rem;
+}
+
+.html-section4 {
+  border: 1px solid transparent;
+  width: 53px;
+  height: 24px;
+  padding: 0.5em;
+  background: #ebebff;
+  border-radius: 20px;
+}
+
+.css-section4 {
+  border: 1px solid transparent;
+  width: 45px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 20px;
+  padding: 0.5em;
+}
+
+.js-section4 {
+  width: 89px;
+  border: 1px solid transparent;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 20px;
+  padding: 0.5em;
+}
+
+/* --------About Section------- */
 .about {
   border: 1px solid #fff;
   background-color: #fff;
@@ -275,10 +614,6 @@ p {
   color: #344563;
   margin-bottom: 8rem;
   margin-left: 2rem;
-}
-
-.social-icons {
-  margin: 1rem;
 }
 
 .social-icons h3 {
@@ -320,6 +655,10 @@ p {
 
 .program-languages {
   margin-left: 0.2rem;
+}
+
+.lang-about-section {
+  margin-left: 17px;
 }
 
 .program-languages p {
@@ -374,12 +713,6 @@ li.fram {
   color: #000;
 }
 
-/* .fram p {
-  width: 0;
-  margin: 0;
-  padding: 0;
-} */
-
 li.skills {
   font-family: Poppins, sans-serif;
   height: 210px;
@@ -392,9 +725,3 @@ li.skills {
   margin-left: 2rem;
   color: #000;
 }
-
-/* .skills p {
-  width: 0;
-  margin: 0;
-  padding: 0;
-} */
