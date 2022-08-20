@@ -57,6 +57,15 @@ div.head-2-container {
   line-height: 52px;
 }
 
+p {
+  position: relative;
+  font-size: 15px;
+  color: #344563;
+  width: 295px;
+  height: 76px;
+  margin-left: 2rem;
+}
+
 .description-container p {
   color: #344563;
   font-family: Poppins, sans-serif;
@@ -143,7 +152,7 @@ div.head-2-container {
 }
 
 .container-image-bg h2 {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-size: 32px;
   line-height: 44px;
@@ -171,21 +180,12 @@ div.head-2-container {
 }
 
 .type-job ul li {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   margin-left: 1rem;
-}
-
-p {
-  position: relative;
-  font-size: 15px;
-  color: #344563;
-  width: 295px;
-  height: 76px;
-  margin-left: 2rem;
 }
 
 .languages-container ul {
@@ -267,14 +267,12 @@ p {
 }
 
 .content-desc {
-  font-family: Poppins;
+  font-family: poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  line-height: 24px;
-  font-weight: 400;
   margin-bottom: 8rem;
   margin-left: 2rem;
 }
@@ -325,7 +323,7 @@ p {
 }
 
 .program-languages p {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -354,7 +352,7 @@ p {
 
 .icon-section span {
   margin-left: 4rem;
-  font-family: ""Poppins"";
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -363,7 +361,7 @@ p {
 }
 
 li.fram {
-  font-family: ""Poppins"";
+  font-family: Poppins, sans-serif;
   height: 210px;
   width: 36px;
   font-style: normal;
@@ -382,7 +380,7 @@ li.fram {
 }
 
 li.skills {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   height: 511px;
   width: 112px;
