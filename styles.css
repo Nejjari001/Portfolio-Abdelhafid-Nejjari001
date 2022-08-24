@@ -727,7 +727,7 @@ li.skills {
   color: #000;
 }
 
-/*---------Form Section------------*/
+/* ---------Form Section------------ */
 
 form {
   display: flex;
@@ -737,10 +737,9 @@ form {
 .contact-form {
   margin-top: 10rem;
   background-color: #6070ff;
-  background-image: url(./mob-img/contact-form-background.png);
   background-repeat: no-repeat;
   background-position-x: 350px;
-  padding: 80px 10px 10px 10px;
+  padding: 80px 10px 10px;
   border-top-left-radius: 120px;
   text-align: center;
 }
@@ -751,11 +750,11 @@ form {
   height: 56px;
   font-size: 40px;
   line-height: 56px;
-  margin: 20px 0 20px;
+  margin: 20px 0;
 }
 
 .contact-content p {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   color: #ebebff;
   height: 136px;
@@ -809,12 +808,12 @@ button {
   height: 48px;
   margin-left: 40px;
   border: 1px solid #6070ff;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   color: #6070ff;
   align-items: center;
