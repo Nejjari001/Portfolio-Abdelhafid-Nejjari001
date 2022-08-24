@@ -585,6 +585,7 @@ p.profess-4 {
 }
 
 /* --------About Section------- */
+
 .about {
   border: 1px solid #fff;
   background-color: #fff;
@@ -725,3 +726,11 @@ li.skills {
   margin-left: 2rem;
   color: #000;
 }
+
+/*---------Form Section------------*/
+
+form {
+  display: flex;
+    flex-direction: column;
+}
+ 
