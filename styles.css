@@ -731,6 +731,93 @@ li.skills {
 
 form {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 }
- 
+
+.contact-form {
+  margin-top: 10rem;
+  background-color: #6070ff;
+  background-image: url(./mob-img/contact-form-background.png);
+  background-repeat: no-repeat;
+  background-position-x: 350px;
+  padding: 80px 10px 10px 10px;
+  border-top-left-radius: 120px;
+  text-align: center;
+}
+
+.contact-content h1 {
+  color: #fff;
+  text-align: center;
+  height: 56px;
+  font-size: 40px;
+  line-height: 56px;
+  margin: 20px 0 20px;
+}
+
+.contact-content p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: #ebebff;
+  height: 136px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 4000;
+  text-align: center;
+}
+
+.name-container input {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  width: 80%;
+  margin-top: 20px;
+  height: 48px;
+  padding-left: 5px;
+}
+
+.mail-container input {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  width: 80%;
+  margin-top: 20px;
+  height: 48px;
+  padding-left: 5px;
+}
+
+.textarea-container textarea {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  width: 80%;
+  margin-top: 20px;
+  height: 170px;
+  padding-left: 5px;
+}
+
+button {
+  width: 140px;
+  height: 48px;
+  margin-left: 40px;
+  border: 1px solid #6070ff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  background: #ffffff;
+  border-radius: 8px;
+  color: #6070ff;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
