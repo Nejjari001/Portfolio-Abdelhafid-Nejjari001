@@ -745,6 +745,7 @@ form {
 }
 
 .contact-content h1 {
+  font-family: Poppins, sans-serif;
   color: #fff;
   text-align: center;
   height: 56px;
@@ -765,6 +766,7 @@ form {
 }
 
 .name-container input {
+  font-family: Poppins, sans-serif;
   border: 1px solid transparent;
   border-radius: 8px;
   background: #fff;
@@ -778,6 +780,7 @@ form {
 }
 
 .mail-container input {
+  font-family: Poppins, sans-serif;
   border: 1px solid transparent;
   border-radius: 8px;
   background: #fff;
@@ -791,6 +794,7 @@ form {
 }
 
 .textarea-container textarea {
+  font-family: Poppins, sans-serif;
   border: 1px solid transparent;
   border-radius: 8px;
   background: #fff;
