@@ -658,7 +658,38 @@ a {
     font-size: 22px;
     line-height: 20px;
     color: #6070ff;
+    animation: abdo;
+    animation-duration: 1200ms;
+    animation-timing-function: ease-in-out;
+    position: relative;
   }
+
+  @keyframes abdo {
+    from {
+      top: -60px;
+    }
+  
+    33% {
+      top: 11px;
+      transform: rotate(90deg);
+    }
+  
+    66% {
+      top: 0;
+      transform: rotate(-30deg);
+    }
+  
+    to {
+      top: 0;
+    }
+  }
+
+  .logo:hover {
+    transform: scale(1);
+  }
+
+
+
 
   .menu {
     display: none;
