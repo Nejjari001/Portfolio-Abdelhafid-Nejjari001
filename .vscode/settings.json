@@ -1,5 +1,6 @@
 {
     "workbench.preferredDarkColorTheme": "Visual Studio Light",
     "workbench.preferredHighContrastColorTheme": "Default High Contrast Light",
-    "window.autoDetectColorScheme": true
+    "window.autoDetectColorScheme": true,
+    "liveServer.settings.port": 5501
 }
