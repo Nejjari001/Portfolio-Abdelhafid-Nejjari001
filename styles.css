@@ -63,7 +63,7 @@ a {
 /* HTML5 Reset Stylesheets. */
 
 /* -----Header Section ---- */
-@media only screen and (min-width: 376px) {
+
   header {
     display: flex;
     justify-content: space-between;
@@ -89,12 +89,12 @@ a {
     position: relative;
     background: #e5e5e5;
     height: auto;
-    width: 100%;
+    width: 1440px;
     margin: 0 auto;
   }
 
   section.intro {
-    width: 100%;
+    width: auto;
     height: auto;
     background-image: url("/img/header-shapes-mobile.png");
     background-size: cover;
@@ -143,7 +143,7 @@ a {
 
   .works {
     display: grid;
-    margin: 114px 24px;
+    margin: 40px 24px;
     grid-template-rows: 220px 80px 76px 24px 72px;
     row-gap: 12px;
     background: #fff;
@@ -158,22 +158,22 @@ a {
 
   .about {
     display: grid;
-    margin: 114px 24px;
+    margin: 9px 24px;
     grid-template-columns: 1fr 1fr;
-    column-gap: 25px;
+    column-gap: 160px;
     background: #fff;
     margin-bottom: 12rem;
-    width: 100%;
-    height: 924px;
+    width: 1440px;
+    height: 773px;
     justify-items: start;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    padding: -29px;
     border-right: 16px;
   }
 
   .grid-container-desktop-about {
-    width: 447px;
+    width: 600px;
     height: 392px;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr 1fr;
@@ -197,21 +197,21 @@ a {
 
   .paragraph-about {
     margin-left: 142px;
-    width: auto;
+    width: 100%;
   }
 
   .paragraph-about p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #344563;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
   }
 
   .container-social-about {
     height: auto;
     width: 200px;
     margin-right: 142px;
-    margin-top: 12px;
+    margin-top: 5px;
     margin-left: 142px;
   }
 
@@ -236,7 +236,7 @@ a {
 
   div.btn-see-projects-about {
     margin-left: 142px;
-    margin-top: 12px;
+    margin-top: 8px;
     margin-bottom: 12px;
   }
 
@@ -310,7 +310,7 @@ a {
     height: 136px;
     font-size: 20px;
     line-height: 28px;
-    font-weight: 4000;
+    font-weight: 400x ;
     text-align: center;
   }
 
@@ -318,9 +318,9 @@ a {
     margin: 10px 0;
   }
 
-  li.container-span-about {
-    height: 120px;
-    height: 122px;
+  .span-about {
+    height: 100px;
+    width: 122px;
     margin-right: 33px;
     background: #f7f7f9;
     border-radius: 8px;
@@ -482,9 +482,6 @@ a {
 
   .languages-list li p {
     margin: 10px 0;
-
-    /* font-weight: 500;
-    font-size: 20px; */
   }
 
   .row-icone {
@@ -624,28 +621,32 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
   }
-}
+
 
 /* ----------------Desktop Version------ */
 
 @media only screen and (min-width: 768px) {
   header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 9px;
+    margin: 9px -140px 9px 9px ;
     background-color: #fff;
     box-shadow: 0 1px 4px lightgrey;
     align-items: center;
-    width: 100%;
+    width: auto;
   }
 
   nav {
-    display: block;
-    margin: 16px 142px 16px 0;
+    display: flex;
+    width: auto;
+    margin-right: 10rem;
+   
   }
 
   nav a.links {
-    margin-right: 12px;
+    margin-right: 35px;
+    padding: 10px;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -658,7 +659,38 @@ a {
     font-size: 22px;
     line-height: 20px;
     color: #6070ff;
+    animation: abdo;
+    animation-duration: 1200ms;
+    animation-timing-function: ease-in-out;
+    position: relative;
   }
+
+  @keyframes abdo {
+    from {
+      top: -60px;
+    }
+  
+    33% {
+      top: 11px;
+      transform: rotate(90deg);
+    }
+  
+    66% {
+      top: 0;
+      transform: rotate(-30deg);
+    }
+  
+    to {
+      top: 0;
+    }
+  }
+
+  .logo:hover {
+    transform: scale(1);
+  }
+
+
+
 
   .menu {
     display: none;
@@ -668,7 +700,7 @@ a {
     position: relative;
     background: #e5e5e5;
     height: auto;
-    width: 100%;
+    width: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -721,12 +753,22 @@ a {
     color: #7f8cff;
   }
 
+
   section.works {
     display: flex;
     align-items: center;
     height: 496px;
     width: 1156px;
   }
+  section.works.card-1,
+  section.works.card-2,
+  section.works.card-3,
+  section.works.card-4,
+  section.about {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
 
   .card-container-1 {
     margin: 24px 22px 24px 24px;
@@ -905,7 +947,9 @@ a {
   .container.desktop {
     height: 577px;
     width: 801px;
-    margin: 142px 320px 127px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
   }
 
   form {
@@ -924,11 +968,15 @@ a {
     line-height: 52px;
   }
 
-  .contact-content p {
+  p.contact {
     font-weight: 400;
     font-size: 20px;
+    height: 102px;
+    width: 569px;
     line-height: 28px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .name-container input {
@@ -939,7 +987,7 @@ a {
     font-size: 17px;
     line-height: 20px;
     color: #172b4d;
-    width: 80%;
+    width: 447px;
     margin-top: 20px;
     height: 48px;
     padding-left: 5px;
@@ -953,7 +1001,7 @@ a {
     font-size: 17px;
     line-height: 20px;
     color: #172b4d;
-    width: 80%;
+    width: 447px;
     margin-top: 20px;
     height: 48px;
     padding-left: 5px;
@@ -967,7 +1015,7 @@ a {
     font-size: 17px;
     line-height: 20px;
     color: #172b4d;
-    width: 80%;
+    width: 447px;
     margin-top: 20px;
     height: 170px;
     padding-left: 5px;
