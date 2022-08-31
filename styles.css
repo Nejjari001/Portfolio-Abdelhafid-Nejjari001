@@ -495,18 +495,18 @@ button.btn-get {
 }
 
 button.btn-get:hover {
-  background: #6070FF;
-  color: #FFFFFF;
+  background: #6070ff;
+  color: #fff;
 }
 
 button.btn-get:active {
-  background: #FFFFFF;
-  color: #6070FF;
+  background: #fff;
+  color: #6070ff;
 }
 
 button.btn-get:focus {
-  background: #2230D2;
-  color: #FFFFFF;
+  background: #2230d2;
+  color: #fff;
 }
 
 /* ----------------Desktop Version------ */
