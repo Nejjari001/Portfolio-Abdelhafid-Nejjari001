@@ -195,20 +195,30 @@ section.works {
 
 div.card-container-1 {
   display: grid;
-
-  /* grid-template-rows: 1fr 1fr 1fr; */
   row-gap: 12px;
   width: 295px;
   align-items: center;
   justify-content: center;
 }
 
-div.title {
-  width: 295px;
-  padding: 12px 16px;
+.contact-content h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
 }
 
-.title-about h1 {
+.title-about-section h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+div.title h1 {
+  margin-bottom: 12px;
+}
+
+.title.experience h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -224,18 +234,15 @@ div.title {
   text-align: center;
 }
 
-div.title h1 {
-  margin-bottom: 12px;
-}
 
 div.paragraph {
   width: 295px;
-  padding: 12px 16px;
+  margin-bottom: 12px;
 }
 
 div.languages {
   width: 295px;
-  padding: 12px 16px;
+  margin-bottom: 42px;
 }
 
 ul.flex-lang li span {
@@ -251,7 +258,7 @@ ul.flex-lang li span {
 
 .btn-see-projects {
   width: 295px;
-  padding: 16px;
+  margin-bottom: 32px;
 }
 
 .btn-see-projects a {
@@ -263,6 +270,20 @@ ul.flex-lang li span {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #396df2;
+}
+
+div.container {
+  display: flex;
+  align-items: center;
+}
+
+div.container h2 {
+  margin-right: 32px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  list-style: none;
 }
 
 ul.flex-container-list {
@@ -277,15 +298,6 @@ ul.flex-container-list li {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-}
-
-ul.flex-container-list h2 {
-  margin-right: 32px;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #344563;
-  list-style: none;
 }
 
 div.paragraph p.mobile-para {
@@ -317,9 +329,11 @@ ul.flex-lang {
   margin-bottom: 24px;
 }
 
-.title-about {
+.title-about-section {
   width: 327px;
 }
+
+
 
 .paragraph-about {
   width: 327px;
@@ -740,11 +754,7 @@ p.contact {
     margin-top: 0;
   }
 
-  .contact-content h1 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-  }
+ 
 
   p.contact {
     font-weight: 400;
