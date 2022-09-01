@@ -68,17 +68,16 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* position: relative; */
   background: #e5e5e5;
   height: auto;
-  width: 375px;
+  width: auto;
   margin: 0;
   padding: 0;
 }
 
 header {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0;
@@ -108,6 +107,7 @@ nav {
 section.intro {
   padding: 114px 24px;
   height: auto;
+  width: 100%;
   background-image: url("/img/header-shapes-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -116,23 +116,20 @@ section.intro {
 }
 
 .title {
-  width: 327px;
+  width: auto;
   margin-bottom: 12px;
 }
 
 .title h1 {
   font-weight: 700;
+  width: auto;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
 }
 
-.title h1.desktop-title {
-  display: none;
-}
-
 .desc {
-  width: 327px;
+  width: auto;
   margin-bottom: 12px;
 }
 
@@ -188,7 +185,7 @@ section {
 section.works {
   display: grid;
   align-items: center;
-  width: 327px;
+  width: auto;
   padding: 16px 16px 12px;
   row-gap: 15px;
   background: #fff;
@@ -321,8 +318,11 @@ ul.flex-lang {
 
 /* ------ About Section --------- */
 
-.about-form {
-  width: 375px;
+.about-form.grid {
+  display: grid;
+  gap: 10px;
+  grid-column: 1/5;
+  width: auto;
   background-color: #fff;
   padding: 114px 24px;
   border-top-right-radius: 75px;
@@ -331,28 +331,31 @@ ul.flex-lang {
 .grid-container-desktop-about {
   display: flex;
   flex-direction: column;
+  width: auto;
   gap: 12px;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 24px;
 }
 
 .title-about-section {
-  width: 327px;
+  width: auto;
 }
 
 .paragraph-about {
-  width: 327px;
+  width: auto;
 }
 
-.paragraph-about p {
+div.paragraph-about p {
   font-weight: 400;
+  width: auto;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
 
 .container-social-about {
-  width: 327px;
+  width: auto;
+  margin: 12px 0;
 }
 
 .container-social-about a {
@@ -363,9 +366,10 @@ ul.flex-lang {
 }
 
 .btn-see-projects-about {
-  width: 327px;
+  width: auto;
   margin-top: 16px;
   margin-bottom: 24px;
+  margin-left: 0;
 }
 
 .btn-see-projects-about a {
@@ -380,7 +384,7 @@ ul.flex-lang {
 }
 
 .card-container-skills {
-  width: 327px;
+  width: auto;
   margin-top: 12px;
 }
 
@@ -394,7 +398,7 @@ li.frameworks-about p,
 li.skills-about p {
   padding-top: 6px;
   position: relative;
-  width: 327px;
+  width: auto;
   height: 72px;
 }
 
@@ -425,14 +429,14 @@ span.icone-about {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 375px;
+  width: auto;
   background-color: #6070ff;
   padding: 114px 24px;
   border-top-left-radius: 75px;
 }
 
 .contact-content {
-  width: 295px;
+  width: auto;
 }
 
 p.contact {
@@ -513,22 +517,30 @@ button.btn-get:focus {
 
 @media only screen and (min-width: 768px) {
   /* ----- Start Header Section -------- */
-
-  header {
-    margin: 16px 0;
-    background-color: #fff;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background: #e5e5e5;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  div.container-nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 16px 142px;
+  header {
+    margin: 0;
+    width: 1440px;
+    background-color: #fff;
     align-items: center;
   }
 
   nav {
     display: flex;
+    justify-content: space-between;
+    margin: 16px 142px 16px 0;
+    align-items: center;
     width: fit-content;
     gap: 8px;
   }
@@ -540,6 +552,10 @@ button.btn-get:focus {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+  }
+
+  .container-logo {
+    margin: 16px 0 16px 143px;
   }
 
   .logo {
@@ -584,66 +600,125 @@ button.btn-get:focus {
 
   /* ----- End Header Section -------- */
 
-  .wrapper {
-    position: relative;
-    background: #e5e5e5;
-    width: 1440px;
-    height: auto;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  section.intro.desktop {
+    background-image: url("/img/header-bg-desktop.png");
+    background-size: contain;
+    padding: 289px 260px;
+  }
+
+
+  .works.grid {
+    display: grid;
+    grid-column: 1/8;
+    width: auto;
+    column-gap: 24px;
+  }
+
+  div.card-container-1 {
+    display: grid;
+    row-gap: 12px;
+    width: auto;
     align-items: center;
     justify-content: center;
   }
 
-  section.intro {
-    height: 800px;
-    margin: 0;
-    background-image: url("/img/header-bg-desktop.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    /* background-position-y: -20px; */
-    border-bottom-left-radius: 200px;
+  div.card-container-1 > img.img-version-mobile {
+    display: none;
   }
 
-  div.container-global {
+  div.card-container-1 > img.img-version-desktop {
+    display: block;
+    width: auto;
     height: auto;
-    flex-direction: column;
-    position: relative;
-    top: -82px;
-    margin: 289px 260px;
   }
 
-  h1.title {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 60px;
-    letter-spacing: 0.37px;
-    color: #091e42;
-    margin-bottom: 12px;
+  .grid-container-desktop {
+    width: auto;
+    grid-column: 4/8;
+    padding: 24px 22px;
   }
 
-  p.description {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 12px;
+  .title.experience {
+    width: auto;
   }
 
-  .button.connect {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7f8cff;
+  .mobile-title {
+    display: none;
   }
 
-  section.works {
+  div.paragraph {
+    width: auto;
+  }
+
+  div.btn-see-projects > a:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+
+  button.btn-get:hover {
+    background: #6070ff;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .about-form.grid {
+    display: grid;
+    column-gap: 25px;
+    grid-column: 1/8;
+    align-items: center;
+    width: 100%;
+    padding: 142px 0 0;
+  }
+
+  .grid-container-desktop-about {
+    width: auto;
+    grid-column: 1/4;
+    max-width: 447px;
+    padding: 142px 25px 134px 142px;
+  }
+
+  .card-container-skills {
+    grid-column: 4/8;
+    width: auto;
+    padding: 142px 142px 134px 0;
+  }
+
+  ul.flex-icone {
+    display: flex;
+  }
+
+  span.icone-about {
+    width: 122px;
+    height: 120px;
+    margin-right: 12px;
+  }
+
+  .container-form {
+    width: 100%;
+    grid-row: 2;
+    grid-column: 1/8;
+  }
+
+  p.contact {
+    width: auto;
+    max-width: 569px;
+  }
+
+  /*
+  body > main > section.works {
     display: flex;
     align-items: center;
     height: 496px;
     gap: 12px;
     width: auto;
+  }
+
+  div.card-container-1 img.img-version-mobile {
+    display: none;
+  }
+
+  div.card-container-1 img.img-version-desktop {
+    display: block;
   }
 
   .grid-container-desktop.order {
@@ -662,19 +737,18 @@ button.btn-get:focus {
     display: block;
   }
 
-  div.card-container-1 {
+  body > main > section.works.card-1 > div.card-container-1{
     display: flex;
     grid-row: 4fr;
     height: auto;
     margin: 24px 22px 24px 24px;
   }
 
-  div.card-container-2 {
+  body > main > section.works.card-1 > div.card-container-2 {
     width: fit-content;
     height: 360px;
   }
-
-  div.grid-container-desktop {
+  body > main > section.works.card-1 > div.grid-container-desktop {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -807,11 +881,13 @@ button.btn-get:focus {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-  }
+  } */
 
   /* ---------Form Section------------ */
+
+  /*
   .container.form {
-    /* height: 577px; */
+     height: 577px;
     width: auto;
     margin-bottom: 90px;
   }
@@ -882,4 +958,5 @@ button.btn-get:focus {
     margin-left: auto;
     margin-right: auto;
   }
+*/
 }
