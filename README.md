@@ -1,13 +1,20 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio Setup And Mobile Firs
+# Abdo | Portfolio
 
-> "Portfolio Setup And Mobile Firs" is my the portfolio mobile version that contains header and headline sections.
+Responsive site from Mobile to desktop. First Figma template.
+
+ Used Flexbox for the header and the 1st page.
+- Combile Grid and Flexbox to build the work area.
+- Used media queries to make the site responsive.
+- Used animations a transitions to make the site more friendly to the user.
 
 
 ## Built With
 
-- html-css
+- HTML
+-CSS
+-Check the code with Linters tests.
 
 ## Live Demo (if available)
 
