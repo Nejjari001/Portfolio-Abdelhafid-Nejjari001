@@ -12,9 +12,9 @@ Responsive site from Mobile to desktop. First Figma template.
 
 ## Built With
 
-- HTML
--CSS
--Check the code with Linters tests.
+- HTML.
+- CSS.
+- Check the code with Linters tests.
 
 ## Live Demo (if available)
 
