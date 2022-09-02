@@ -624,6 +624,11 @@ button.btn-get:focus {
     margin-bottom: 12px;
   }
 
+  img:hover {
+    transform: scale(1.01);
+    transition-duration: 250ms;
+  }
+
   p.description {
     font-weight: 400;
     font-size: 20px;
