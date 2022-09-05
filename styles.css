@@ -108,7 +108,7 @@ section.intro {
   padding: 114px 24px;
   height: auto;
   width: 100%;
-  background-image: url("/img/header-shapes-mobile.png");
+  background-image: url("././img/header-shapes-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -425,7 +425,7 @@ span.icone-about {
 /* -------- Form Section ---------- */
 
 .container-form {
-  background-image: url("/img/contact-form-background.png");
+  background-image: url("././img/contact-form-background.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -604,7 +604,7 @@ button.btn-get:focus {
   /* ----- End Header Section -------- */
 
   section.intro.desktop {
-    background-image: url("/img/header-bg-desktop.png");
+    background-image: url("././img/header-bg-desktop.png");
     background-size: contain;
     padding: 289px 260px;
   }
