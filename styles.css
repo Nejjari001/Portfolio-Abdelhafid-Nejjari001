@@ -134,6 +134,7 @@ header {
   transform: rotate(45deg) translate(-8px, -8px);
   background-color: #fff;
 }
+
 .header-container {
   display: flex;
   position: fixed;
