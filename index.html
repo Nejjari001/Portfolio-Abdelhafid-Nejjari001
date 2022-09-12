@@ -10,17 +10,22 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-container">
         <div class="container-logo">
             <a class="logo" href="#">Abdo</a>
         </div>
         <div class="menu">
-            <a href="#" ><img src="././img/icon-Menu.svg" alt="humberger-image"></a>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
         <nav class="navigation">
-            <a class="links" href="#portfolio">Portfolio</a>
-            <a class="links" href="#about">About</a>
-            <a class="links" href="#contact">Contact</a>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portoflio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+         
         </nav>
         
     </header>
@@ -29,7 +34,7 @@
    
    
 
-        <section class="intro desktop">
+        <section class="intro desktop" id="portfolio">
             <div class="container-global desktop">
 
                 <div class="title desktop">
@@ -210,7 +215,7 @@
 
         <section class="about-form grid">
 
-            <div class="grid-container-desktop-about">
+            <div class="grid-container-desktop-about" id="about">
 
                 <div class="title-about-section">
                     <h1>About<br>Myself</h1>
@@ -283,7 +288,7 @@
                 </div>
             </div>
 
-            <div class="container-form">
+            <div class="container-form" id="contact">
                 <div class="contact-content">
                     <h1 class="contact-me">Contact me</h1>
                     <p class="contact">
@@ -314,6 +319,7 @@
 
 
     </main>
+    <script src="main.js"></script>
 </body>
 
 </html>

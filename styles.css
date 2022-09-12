@@ -75,6 +75,10 @@ a {
   padding: 0;
 }
 
+#portfolio {
+  margin-top: 78px;
+}
+
 header {
   display: flex;
   width: 100%;
@@ -89,11 +93,96 @@ header {
 
 .logo {
   padding: 12px 10px;
+  color: #6070ff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
 }
 
 .menu {
-  padding: 8px;
-  margin: 4px 4px 4px 199px;
+  display: block;
+  cursor: pointer;
+  padding: 10px 0;
+  width: auto;
+  z-index: 2;
+  margin: 4px 24px 4px 311px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #7f8cff;
+  margin: 6px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: #fff;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: #fff;
+}
+
+.header-container {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background: #fff;
+  width: 80%;
+  padding: 1% 10%;
+  margin: 0;
+  z-index: 3;
+}
+
+.navigation {
+  display: flex;
+  position: fixed;
+  align-items: flex-start;
+  padding: 20% 10%;
+  top: -5%;
+  height: 110vh;
+  width: 100%;
+  left: -120%;
+  transition: 0.3s;
+  background: #7f8cff;
+  z-index: 1;
+}
+
+.navigation a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: block;
+  flex-direction: column;
+  color: #fff;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.navigation.change {
+  left: 0;
 }
 
 nav {
