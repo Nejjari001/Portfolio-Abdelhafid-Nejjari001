@@ -598,6 +598,7 @@ button.btn-get:focus {
   .container_menu {
     display: none;
   }
+
   #ellipse-menu {
     display: none;
   }
@@ -632,18 +633,18 @@ button.btn-get:focus {
     height: auto;
     left: 821px;
     padding: 0;
-}
+  }
 
-.li-desk ul {
-  display: flex;
-  gap: 45px;
-  margin: 0;
-  padding: 0;
-  flex-direction: row;
-  align-items: flex-start;
-  z-index: 1;
-  transition: 0.3s;
-}
+  .li-desk ul {
+    display: flex;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    z-index: 1;
+    transition: 0.3s;
+  }
 
   ul.nav-item {
     display: flex;
