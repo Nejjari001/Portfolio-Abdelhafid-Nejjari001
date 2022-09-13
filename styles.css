@@ -598,7 +598,6 @@ button.btn-get:focus {
   .container_menu {
     display: none;
   }
-
   #ellipse-menu {
     display: none;
   }
@@ -621,12 +620,32 @@ button.btn-get:focus {
 
   header {
     margin: 2.5rem;
-    width: 1440px;
+    width: auto;
     background-color: #fff;
     align-items: center;
   }
 
-  nav {
+  .li-desk {
+    display: flex;
+    position: relative;
+    background: #fff;
+    height: auto;
+    left: 821px;
+    padding: 0;
+}
+
+.li-desk ul {
+  display: flex;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+  ul.nav-item {
     display: flex;
     justify-content: space-between;
     margin: 16px 142px 16px 0;
@@ -635,7 +654,7 @@ button.btn-get:focus {
     gap: 8px;
   }
 
-  .nav-links {
+  .nav-link {
     margin-right: 35px;
     padding: 10px;
     font-weight: 500;
