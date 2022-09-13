@@ -164,11 +164,6 @@ li {
   font-size: 25px;
 }
 
-
-
-
-
-
 /* -----End Header Section ---- */
 
 .wrapper {
@@ -687,9 +682,7 @@ button.btn-get:focus {
     transform: scale(1);
   }
 
-
   /* ----- End Header Section -------- */
-
   section.intro.desktop {
     background-image: url("././img/header-bg-desktop.png");
     background-size: contain;
