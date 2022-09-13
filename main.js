@@ -1,14 +1,15 @@
-// Hambuger menu
-const hamburgerMenu = document.querySelector('.menu');
-const navBarMenu = document.querySelector('.navigation');
+// HAMBURGER BUTTON
+const hamburger = document.querySelector('.container_menu');
+const navMenu = document.querySelector('.li-desk');
 
-const hamburger = () => {
-  hamburgerMenu.classList.toggle('change');
-  navBarMenu.classList.toggle('change');
+const bars = () => {
+  hamburger.classList.toggle('change');
+  navMenu.classList.toggle('change');
 };
 
-hamburgerMenu.addEventListener('click', hamburger);
-document.querySelectorAll('.navigation').forEach((elements) => elements.addEventListener('click', () => {
-  hamburgerMenu.classList.remove('change');
-  navBarMenu.classList.remove('change');
+hamburger.addEventListener('click', bars);
+
+document.querySelectorAll('.nav-link').forEach((element) => element.addEventListener('click', () => {
+  hamburger.classList.remove('change');
+  navMenu.classList.remove('change');
 }));

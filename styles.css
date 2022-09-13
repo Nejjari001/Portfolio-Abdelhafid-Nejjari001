@@ -62,53 +62,19 @@ a {
 /* HTML5 Reset Stylesheets. */
 
 /* ----- Start Header Section ---- */
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #e5e5e5;
-  height: auto;
-  width: auto;
-  margin: 0;
-  padding: 0;
-}
-
-#portfolio {
-  margin-top: 78px;
-}
-
 header {
+  margin-top: 0;
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 0;
+  justify-content: center;
 }
 
-.container-logo {
-  margin: 4px 0 4px 12px;
-}
 
-.logo {
-  padding: 12px 10px;
-  color: #6070ff;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-}
-
-.menu {
+.container_menu {
   display: block;
   cursor: pointer;
   padding: 10px 0;
   width: auto;
   z-index: 2;
-  margin: 4px 24px 4px 311px;
 }
 
 .bar1,
@@ -118,12 +84,14 @@ header {
   height: 5px;
   background-color: #7f8cff;
   margin: 6px 0;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .change .bar1 {
-  transform: rotate(-45deg) translate(-9px, 6px);
   background-color: #fff;
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .change .bar2 {
@@ -131,22 +99,24 @@ header {
 }
 
 .change .bar3 {
-  transform: rotate(45deg) translate(-8px, -8px);
   background-color: #fff;
+ -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.header-container {
+.header_name {
   display: flex;
+  justify-content: space-between;
   position: fixed;
   align-items: center;
   background: #fff;
   width: 80%;
-  padding: 1% 10%;
+  padding: 2% 10%;
   margin: 0;
   z-index: 3;
 }
 
-.navigation {
+.li-desk {
   display: flex;
   position: fixed;
   align-items: flex-start;
@@ -160,17 +130,7 @@ header {
   z-index: 1;
 }
 
-.navigation a {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  display: block;
-  flex-direction: column;
-  color: #fff;
-}
-
-.navigation ul {
+.li-desk ul {
   display: flex;
   gap: 45px;
   margin: 0;
@@ -181,15 +141,52 @@ header {
   transition: 0.3s;
 }
 
-.navigation.change {
+.li-desk.change {
   left: 0;
 }
 
-nav {
-  display: none;
+.nav-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  transition: 0.7s ease;
+  color: #fff;
 }
 
+li {
+  list-style: none;
+}
+
+.top {
+  padding: 0;
+  color: #7f8cff;
+}
+
+.header_name h2 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-size: 25px;
+}
+
+
+
+
+
+
 /* -----End Header Section ---- */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
 
 /* -----Start Intro Section ---- */
 
@@ -608,6 +605,20 @@ button.btn-get:focus {
 /* ----------------Desktop Version------ */
 
 @media only screen and (min-width: 768px) {
+
+  .container_menu {
+    display: none;
+  }
+
+  #ellipse-menu {
+    display: none;
+  }
+
+  #ellipse-menu-2 {
+    display: none;
+  }
+
+  
   /* ----- Start Header Section -------- */
   .wrapper {
     display: flex;
@@ -622,7 +633,7 @@ button.btn-get:focus {
   }
 
   header {
-    margin: 0;
+    margin: 2.5rem;
     width: 1440px;
     background-color: #fff;
     align-items: center;
@@ -637,17 +648,13 @@ button.btn-get:focus {
     gap: 8px;
   }
 
-  nav a.links {
+  .nav-links {
     margin-right: 35px;
     padding: 10px;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-  }
-
-  .container-logo {
-    margin: 16px 0 16px 143px;
   }
 
   .logo {
@@ -686,9 +693,6 @@ button.btn-get:focus {
     transform: scale(1);
   }
 
-  .menu {
-    display: none;
-  }
 
   /* ----- End Header Section -------- */
 
