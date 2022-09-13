@@ -42,10 +42,6 @@ main {
   display: block;
 }
 
-li {
-  list-style: none;
-}
-
 nav ul {
   list-style: none;
 }
@@ -67,7 +63,6 @@ header {
   display: flex;
   justify-content: center;
 }
-
 
 .container_menu {
   display: block;
@@ -100,7 +95,7 @@ header {
 
 .change .bar3 {
   background-color: #fff;
- -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
@@ -605,7 +600,6 @@ button.btn-get:focus {
 /* ----------------Desktop Version------ */
 
 @media only screen and (min-width: 768px) {
-
   .container_menu {
     display: none;
   }
@@ -618,7 +612,7 @@ button.btn-get:focus {
     display: none;
   }
 
-  
+
   /* ----- Start Header Section -------- */
   .wrapper {
     display: flex;
