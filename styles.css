@@ -827,3 +827,126 @@ button.btn-get:focus {
     max-width: 569px;
   }
 }
+
+/* POPUP - STYLE */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #fff;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.147);
+  width: 90%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 4% 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 30px;
+}
+
+.snapshoot {
+  overflow: hidden;
+  background: white;
+  margin: 0 8% 4% 8%;
+  background-image: url("./assets/images/Snapshoot\ Portfolio.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  transition: 0.5s;
+  position: relative;
+  background-color: white;
+  height: 181px;
+  cursor: pointer;
+}
+
+.snapshoot:hover {
+  background: rgba(0, 0, 0, 0.592);
+  background-image: url("./assets/images/Snapshoot\ Portfolio.png");
+}
+
+.modal-body {
+  padding: 0 8% 4% 8%;
+  color: white;
+  text-align: center;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(30px);
+  background: #1a176589;
+  pointer-events: none;
+  z-index: 8;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.poop-p2 ul {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.poop-project button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+}
+
+#see-source {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#github-none {
+  display: none;
+}
+
+.see-project button:hover,
+#see-footer:hover {
+  background: #5046d6;
+}
+
+h1:hover,
+h2:hover,
+.top:hover,
+#top:hover,
+.css:hover,
+.rect:hover,
+.main-section:hover,
+.title-lang:hover,
+.list:hover,
+.section-top h2:hover,
+.recent-work h1 a:hover,
+.modal-header .title:hover,
+.modal-header .close-button:hover {
+  color: #0d99ff;
+}
+
