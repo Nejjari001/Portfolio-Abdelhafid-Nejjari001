@@ -10,71 +10,209 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <nav class="header_name">
-            <a href="#" class="top">
-                <h2 id="top">Abdo</h2>
-            </a>
-            <div class="li-desk">
-                <ul>
-                    <li class="nav-item"><a class="nav-link" href="#portoflio">Portoflio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-                <div id="ellipse-menu-2"></div>
-                <div id="ellipse-menu"></div>
+    <div class="container" id="container">
+        <section class="home">
+          <div class="mobile-menu"></div>
+          <div class="overlay" id="menu-overlay">
+            <ul class="menu-close-btn">
+              <li class="close-menu-btn">
+                <img
+                  src="./img/close-icon-mobile.png"
+                  alt="Close out menu"
+                  class="menu-close"
+                />
+              </li>
+              <li class="menu-item-list"><a href="#portfolio">Portfolio</a></li>
+              <li class="menu-item-list"><a href="#about">About</a></li>
+              <li class="menu-item-list"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <header>
+            <div class="logo-placeholder">
+              <a href="#" class="logo">Abdo NJ</a>
             </div>
-            <div class="container_menu">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="wrapper">
-
-
-
-        <section class="intro desktop" id="portoflio">
-            <div class="container-global desktop">
-
-                <div class="title desktop">
-                    <h1 class="title desktop">I’m Abdo<br>Glad to see you!</h1>
-                </div>
-
-                <div class="desc">
-                    <p class="description desktop">I’m a software developer! I can help you build a product , feature or
-                        website
-                        Look through some of my work and experience! If you like what you see and have a project you
-                        need coded, don’t hestiate to contact me.</p>
-
-                </div>
-
-                <div class="connect">
-                    <a href="#" class="button connect desktop">LET’S CONNECT</a>
-                </div>
-
-                <div class="social container">
-                    <ul class="social-icons">
-                        <li><img src="././img/social/Twitter.svg" alt="twitter-icon"></li>
-                        <li><img src="././img/social/Linkedin.svg" alt="linkdin-icon"></li>
-                        <li><img src="././img/social/Vector-M.svg" alt="medium-icon"></li>
-                        <li><img src="././img/social/Github.svg" alt="github-icon"></li>
-                        <li><img src="././img/social/Hand2.svg" alt="angellist-icon"></li>
-                    </ul>
-                </div>
-
-            </div>
+            <nav class="nav-links">
+              <ul class="menu-bar">
+                <li class="hamburger-button">
+                  <img
+                    src="./img/icon-Menu.svg"
+                    alt="Menu button"
+                    class="menu-button"
+                    id="hamburger"
+                  />
+                </li>
+                <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+          <div class="main">
+            <h1 class="title">I'm Abdo <br />Glad to see you!</h1>
+            <p class="about-me">
+              I’m a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you like
+              what you see and have a project you need coded, don’t hesitate to
+              contact me.
+            </p>
+            <h4 class="social-title">LET'S CONNECT</h4>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><img src="./img/social/Twitter.svg" alt="Twitter" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/social/Linkedin.svg" alt="Linkedln" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/social/Vector-M.svg" alt="Gmail" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/social/Github.svg" alt="Github" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./img/social/Hand2.svg" alt="Social media"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </section>
-        
-         <!-- PROJECTS  javaScript -->
-    <div class="projects"></div>
+    <section class="works" id="portfolio">
+        <!-- Content dynamically generated from Javascript-->
+      </section>
 
+      <div class="about-contact">
+        <section class="about-myself" id="about">
+          <div class="about-container">
+            <div class="one">
+              <h3 class="about-myself-title">About Myself</h3>
+              <p class="about-me-resume">
+                I’m a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hesitate to contact me.
+              </p>
+              <h4 class="connect">LET'S CONNECT</h4>
+              <ul class="social-media">
+                <li>
+                  <a href="#"><img src="./img/social/Github.svg" alt="Github" /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./img/social/Linkedin.svg" alt="Linkedln"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/social/Hand2.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./img/social/Twitter.svg" alt="Twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/social/Vector-M.svg" alt="medium-icon" /></a>
+                </li>
+              </ul>
+              <button type="button" onclick="" class="get-resume">
+                Get my resume
+              </button>
+            </div>
+            <ul class="my-resume">
+              <li class="resume-title">
+                Languages
+                <img
+                  src="./img/arrow-icon.png"
+                  alt="Arrow forward"
+                  class="arrow"
+                />
+              </li>
+              <li>
+                <ul class="prog-lang">
+                  <li>
+                    <img
+                      src="./img/js.png"
+                      alt="JavaScript"
+                      class="javascript"
+                    />
+                    JavaScript
+                  </li>
+                  <li>
+                    <img
+                      src="./img/html.png"
+                      alt="HTML"
+                      class="html"
+                    />HTML
+                  </li>
+                  <li>
+                    <img src="./img/ic-css.png" alt="CSS" class="css" />CSS
+                  </li>
+                </ul>
+              </li>
+              <li class="resume-title border">
+                Frameworks
+                <img
+                  src="./img/Arrow-Right.png"
+                  alt="Arrow forward"
+                  class="arrow"
+                />
+              </li>
+              <li class="resume-title border">
+                Skills
+                <img
+                  src="./img/Arrow-Right.png"
+                  alt="Arrow forward"
+                  class="arrow"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
 
-<!-- 
-        <section class="works card-2 grid">
+        <section class="contact" id="contact">
+          <h1 class="title-contact">Contact me</h1>
+          <p class="contact-info">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+          <form action="https://formspree.io/f/xqkjaqoe" method="POST" class="contact-form" id="form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Please enter your name"
+            />
+            <small id="errorName"></small>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Please enter your email."
+            />
+            <small id="errorEmail"></small>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="7"
+              placeholder="Write your message here"
+            ></textarea>
+            <small id="errorMsg"></small><br />
+            <small id="overralError"></small>
+
+            <button class="contact-button" type="submit" id="submit">
+              Get in Touch
+            </button>
+          </form>
+        </section>
+      </div>
+      <!-- Popup -->
+      <div class="popup-overlay" id="popupOverlay"></div>
+      </div>
+    
+
+        <!-- <section class="works card-2 grid">
 
             <div class="card-container-1">
                 <img class="img-version-mobile" src="././img/Snapshoot-Portfolio-1.png" alt="Snapshot Portfolio Image">
@@ -183,7 +321,7 @@
                 </div>
             </div>
 
-        </section> -->
+        </section> 
 
         <section class="about-form grid">
 
@@ -286,7 +424,8 @@
                 </form>
             </div>
 
-        </section>
+        </section> -->
+
     </main>
     <script src="main.js"></script>
 </body>
