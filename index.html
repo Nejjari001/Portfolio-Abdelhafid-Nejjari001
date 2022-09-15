@@ -182,6 +182,7 @@
               name="name"
               id="name"
               placeholder="Please enter your name"
+              maxlength="30"
             />
             <small id="errorName"></small>
             <input
@@ -197,6 +198,7 @@
               cols="30"
               rows="7"
               placeholder="Write your message here"
+              maxlength="401"
             ></textarea>
             <small id="errorMsg"></small><br />
             <small id="overralError"></small>
@@ -211,8 +213,9 @@
       <div class="popup-overlay" id="popupOverlay"></div>
       </div>
 
-
+    
     <script src="main.js"></script>
+    <script src="validate.js"></script>
 </body>
 
 </html>
