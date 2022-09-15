@@ -614,7 +614,7 @@ button:hover {
   flex-direction: row;
   gap: 1em;
   justify-content: center;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .live-source button:hover {
