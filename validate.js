@@ -49,10 +49,10 @@ form.addEventListener('submit', (event) => {
       && message.value.length > 10
       && message.value.length < 400
       && emailRegex.test(email.value)
-      // && email.value === email.value.toLowerCase()
+      && email.value === email.value.toLowerCase()
   ) {
     form.submit();
-  } else if (fname.value === '' || email.value === '' || message.value === '') {
+  } else if (fname.value === '' && email.value === '' && message.value === '') {
     overralError.textContent = 'Please fill in entire form before submitting.';
     document.getElementById('field-overal').setAttribute('class', 'error');
     event.preventDefault();
