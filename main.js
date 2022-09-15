@@ -103,6 +103,7 @@ data.forEach((i) => {
 
   let html; let css; let js; let github; let ruby; let bootstrap;
 
+  // eslint-disable-next-line no-plusplus
   for (let j = 0; j < Object.keys(i.languages).length; j++) {
     html = document.createElement('li');
     css = document.createElement('li');
@@ -151,6 +152,7 @@ data.forEach((i) => {
 const dataSize = Object.keys(data).length;
 const popupOverlay = document.getElementById('popupOverlay');
 
+// eslint-disable-next-line no-plusplus
 for (let j = 1; j <= dataSize; j++) {
   const idz = 'project'.concat(j);
   const showDetails = document.getElementById(`${idz}`);
