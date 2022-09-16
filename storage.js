@@ -1,7 +1,7 @@
-const formStorage = document.querySelector('form');
-const nameStorage = document.querySelector('name');
-const emailStorage = document.querySelector('email');
-const messageStorage = document.querySelector('message');
+const formStorage = document.getElementById('form');
+const nameStorage = document.getElementById('name');
+const emailStorage = document.getElementById('email');
+const messageStorage = document.getElementById('message');
 
 const intoLocalStorage = (nameStorage, emailStorage, messageStorage) => {
   const formObject = {
