@@ -47,6 +47,18 @@ const data = [
     live: 'https://nejjari001.github.io/Portfolio-setup-and-mobile-firs/',
     source: 'https://github.com/Nejjari001/Portfolio-setup-and-mobile-firs',
   },
+  {
+    id: 4,
+    title: 'Arab Summit MOROCCO 2022',
+    company: 'Arab Affiliate Summit',
+    job: 'Lead Developer',
+    year: 2022,
+    persona: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car',
+    languages: ['html', 'css', 'javascript'],
+    bgImage: 'card4',
+    live: 'https://nejjari001.github.io/Capstone-project/',
+    source: 'https://github.com/Nejjari001/Capstone-project',
+  },
 ];
 
 const projectTitle = document.getElementById('portfolio');
