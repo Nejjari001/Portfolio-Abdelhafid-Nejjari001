@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 const data = [
   {
     id: 1,
@@ -8,8 +9,8 @@ const data = [
     persona: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'css', 'javascript'],
     bgImage: 'card1',
-    live: 'https://nejjari001.github.io/Portfolio-setup-and-mobile-firs/',
-    source: 'https://github.com/Nejjari001/Portfolio-setup-and-mobile-firs',
+    live: 'https://inspecta.github.io/personal-portfolio/',
+    source: 'https://github.com/inspecta/personal-portfolio',
   },
   {
     id: 2,
@@ -20,8 +21,8 @@ const data = [
     persona: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'css', 'javascript'],
     bgImage: 'card2',
-    live: 'https://nejjari001.github.io/Portfolio-setup-and-mobile-firs/',
-    source: 'https://github.com/Nejjari001/Portfolio-setup-and-mobile-firs',
+    live: 'https://inspecta.github.io/personal-portfolio/',
+    source: 'https://github.com/inspecta/personal-portfolio',
   },
   {
     id: 3,
@@ -32,8 +33,8 @@ const data = [
     persona: 'Exploring the future of media in Facebook"s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     languages: ['html', 'css', 'javascript'],
     bgImage: 'card3',
-    live: 'https://nejjari001.github.io/Portfolio-setup-and-mobile-firs/',
-    source: 'https://github.com/Nejjari001/Portfolio-setup-and-mobile-firs',
+    live: 'https://inspecta.github.io/personal-portfolio/',
+    source: 'https://github.com/inspecta/personal-portfolio',
   },
   {
     id: 4,
@@ -44,8 +45,8 @@ const data = [
     persona: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car',
     languages: ['html', 'css', 'javascript'],
     bgImage: 'card4',
-    live: 'https://nejjari001.github.io/Portfolio-setup-and-mobile-firs/',
-    source: 'https://github.com/Nejjari001/Portfolio-setup-and-mobile-firs',
+    live: 'https://inspecta.github.io/personal-portfolio/',
+    source: 'https://github.com/inspecta/personal-portfolio',
   },
 ];
 
@@ -103,7 +104,6 @@ data.forEach((i) => {
 
   let html; let css; let js; let github; let ruby; let bootstrap;
 
-  // eslint-disable-next-line no-plusplus
   for (let j = 0; j < Object.keys(i.languages).length; j++) {
     html = document.createElement('li');
     css = document.createElement('li');
@@ -152,7 +152,6 @@ data.forEach((i) => {
 const dataSize = Object.keys(data).length;
 const popupOverlay = document.getElementById('popupOverlay');
 
-// eslint-disable-next-line no-plusplus
 for (let j = 1; j <= dataSize; j++) {
   const idz = 'project'.concat(j);
   const showDetails = document.getElementById(`${idz}`);
@@ -178,7 +177,7 @@ for (let j = 1; j <= dataSize; j++) {
     const closePop = document.createElement('img');
     closePop.className = 'cancel-icon';
     closePop.setAttribute('id', 'cancel-icon');
-    closePop.src = './img/cancel-icon.png';
+    closePop.src = './images/Icon - Cancel.png';
     popupTitle.appendChild(closePop);
 
     const jobDescriptionPop = document.createElement('ul');
@@ -265,7 +264,7 @@ for (let j = 1; j <= dataSize; j++) {
 
     const liveIcon = document.createElement('img');
     liveIcon.setAttribute('class', 'liveImg');
-    liveIcon.src = './img/Icon-live.svg';
+    liveIcon.src = './images/live.svg';
     liveButton.appendChild(liveIcon);
 
     document.querySelectorAll('.live').forEach((live) => {
@@ -282,7 +281,7 @@ for (let j = 1; j <= dataSize; j++) {
 
     const sourceIcon = document.createElement('img');
     sourceIcon.setAttribute('class', 'sourceImg');
-    sourceIcon.src = './img/Frame.svg';
+    sourceIcon.src = './images/github in button.svg';
     sourceButton.appendChild(sourceIcon);
 
     document.querySelectorAll('.source').forEach((source) => {

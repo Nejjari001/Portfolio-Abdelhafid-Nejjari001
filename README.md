@@ -1,56 +1,51 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Personal-Portfolio
 
-# Abdo | Portfolio
+My professional portfolio or website; a representation of both my technical skills and work experience that I have achieved over a period of time.
 
-Responsive site from Mobile to desktop. First Figma template.
+# Website Template
 
- Used Flexbox for the header and the 1st page.
-- Combile Grid and Flexbox to build the work area.
-- Used media queries to make the site responsive.
-- Used animations a transitions to make the site more friendly to the user.
+Figma Template
 
+# Development Tools
 
-## Built With
+- VS Code, Chrome Browser
+- Languages : HTML5 & CSS3
+- Linters (.stylelintrc.json, .hintrc)
 
-- HTML.
-- CSS.
-- Check the code with Linters tests.
+# Getting Started
 
-## Live Demo (if available)
-https://nejjari001.github.io/Portfolio-setup-and-mobile-firs/
+To get this project running on your local machine, follow any of these steps
+- Go to the project github repository here, click on "Code" and download the ZIP file Unzip the file to access the project files.
+#### OR 
+- Go to the project github repository here, copy the SSH, HTTPS or Github CLI link from the code command. 
+- Clone the project into your local machine using Git or VS Code terminal.
 
-## Getting Started
+# Live Project Demo
 
-To get a local copy up and running follow these simple example steps:
-- git clone git@github.com:Nejjari001/Hell_Microverse.git
-- cd Portfolio-setup-and-mobile-firs
-- npm install
-- npm run build
-- index.html
+For the live demo of this portfolio, click [here](https://inspecta.github.io/personal-portfolio/)
 
+# Github
 
-## Authors
+Github repository can be found [Here](https://github.com/inspecta/personal-portfolio)
 
-👤 Nejjari Abdelhafid
+# Authors
 
-- GitHub: [@Nejjari001](https://github.com/Nejjari001)
-- Twitter: [@AbdoNJ19](https://https://twitter.com/AbdoNJ19)
-- LinkedIn: [Abdelhafid Nejjari](https://www.linkedin.com/in/abdelhafid-nejjari/)
+Derrick Mulinde - Full Stack Developer
 
-## 🤝 Contributing
+- Github: @inspecta
+- Linkedln: mulinde-derrick
+- Twitter: @mudeks
 
-Contributions, issues, and feature requests are welcome!
+# Contributions
 
-Feel free to check the [issues page](../../issues/).
+Any contributions towards the improvement of the portfolio are highly welcome.
 
-## Show your support
+# Support
 
-Give a ⭐️ if you like this project!
+If you think this is a great portfolio, give it a ⭐️.
 
-## Acknowledgments
+# Acknowledgements
 
-- Hat tip to anyone whose code was used
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
+- Thanks Figma for the website design template.
+- Thanks Wes Bos for the amazing Flexbox tutorial.
+- Thanks Microverse for guiding me through this development.
