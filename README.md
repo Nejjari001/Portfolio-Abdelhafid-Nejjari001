@@ -32,9 +32,9 @@ Github repository can be found [Here](https://github.com/inspecta/personal-portf
 
 Derrick Mulinde - Full Stack Developer
 
-- Github: @inspecta
-- Linkedln: mulinde-derrick
-- Twitter: @mudeks
+- Github: @NEJJARI001
+- Linkedln: abdelhafid-nejjari
+- Twitter: @AbdoNJ19
 
 # Contributions
 
